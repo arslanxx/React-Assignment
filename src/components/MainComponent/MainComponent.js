@@ -19,12 +19,12 @@ export default function MainComponent() {
 
   const handleClick = (flag) => {
     if (flag == "high") {
-      const itemAscSort = data.items.sort(function (a, b) {
+      const itemAscSort = items.sort(function (a, b) {
         return b.price_rounded - a.price_rounded;
       });
       setItems([...itemAscSort]);
     } else {
-      const itemsDescSort = data.items.sort(function (a, b) {
+      const itemsDescSort = items.sort(function (a, b) {
         return a.price_rounded - b.price_rounded;
       });
       setItems([...itemsDescSort]);
